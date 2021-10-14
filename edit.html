@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo-btn" href="/"><img class="logo" src="images/logo.png"></a>
+        <nav>
+            <a class="nav-link" href="shop.html">Shop</a>
+            <a class="nav-link" href="cart.html">Cart</a>
+        </nav>
+        <span class="toogle-login-logout"><a class="login-link" href="login.html">Login</a></span>
+    </header>
+    <div class="admin-menu-container"></div>
+    <div class="edit-menu-container"></div>
+    <main>
+        <div class="edit-product-container">
+            <h1>Edit Product</h1>
+            <div class="loader edit-loader">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <div class="loading-text">
+                    Loading...
+                </div>
+            </div>
+            <form class="edit-product-form">
+                <div class="edit-message-container"></div>
+    
+                <div>
+                    <label for="title">Title</label>
+                    <input id="title" name="ref" value="title"/>
+                </div>
+                <div>
+                    <label for="price">Price</label>
+                    <input id="price" name="refId" value="price"/>
+                </div>
+                <div class="checkbox-container">
+                    <label for="checkbox">Feature product on homepage</label>
+                    <input type= "checkbox" id="checkbox" name="refId"/>
+                </div>
+
+                <div>
+                    <label for="description">Description</label>
+                    <textarea id="description" name="refId" value="cover"></textarea>
+                </div>
+                <div>
+                    <label for="img">Select image:</label>
+                    <input type="file" name="files" id="fileupload"/>
+                </div>
+                <div>
+                    <input id="id" type="hidden"/>
+                </div>
+    
+                <button class="edit-product-btn">Submit Changes</button>
+                
+                <div class="delete-container">
+
+                </div>
+                
+            </form>
+            </div>
+    </main>
+    <footer>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </footer>
+    <script type="module" src="js/edit.js"></script>
+</body>
+</html>
